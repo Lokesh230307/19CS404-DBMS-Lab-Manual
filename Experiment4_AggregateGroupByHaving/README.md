@@ -51,6 +51,7 @@ where city = 'California';
 ```
 
 **Output:**
+
 <img width="626" height="276" alt="image" src="https://github.com/user-attachments/assets/bbc0158e-5552-4040-989d-92d800ff2e70" />
 
 
@@ -83,6 +84,7 @@ from employee
 ```
 
 **Output:**
+
 <img width="532" height="278" alt="image" src="https://github.com/user-attachments/assets/04621c94-cd8e-41d6-9aad-af642bf58680" />
 
 
@@ -100,6 +102,7 @@ group by PatientID;
 ```
 
 **Output:**
+
 <img width="757" height="606" alt="image" src="https://github.com/user-attachments/assets/91337cd1-bef3-4ae0-94f2-32a841ab2ffe" />
 
 
@@ -115,6 +118,7 @@ group by InsuranceCompany;
 ```
 
 **Output:**
+
 <img width="771" height="663" alt="image" src="https://github.com/user-attachments/assets/f0580171-8b07-4ef6-b834-660f4a7559c4" />
 
 
@@ -130,6 +134,7 @@ group by Gender;
 ```
 
 **Output:**
+
 <img width="692" height="339" alt="image" src="https://github.com/user-attachments/assets/5b064781-71ce-4fdf-9916-4fb1bad8f234" />
 
 
@@ -146,6 +151,7 @@ having SUM(salary) >5000;
 ```
 
 **Output:**
+
 <img width="583" height="340" alt="image" src="https://github.com/user-attachments/assets/7b553a3d-1567-4ce9-b153-815a02c6ebc4" />
 
 
@@ -162,6 +168,7 @@ having AVG(salary) > 5000;
 ```
 
 **Output:**
+
 <img width="601" height="405" alt="image" src="https://github.com/user-attachments/assets/5246672e-2b58-4fb3-b023-bbebf226119e" />
 
 
@@ -183,6 +190,7 @@ having AVG(salary) < 15000;
 **Question 10**
 ---
 <img width="1252" height="358" alt="image" src="https://github.com/user-attachments/assets/27c0937a-78cd-4c8f-adf1-a97c6237be09" />
+
 ```sql
 select (age/5)*5 as age_group,
 MIN(age)
@@ -192,6 +200,7 @@ having MIN(age) < 25;
 ```
 
 **Output:**
+
 <img width="570" height="285" alt="image" src="https://github.com/user-attachments/assets/fb442f18-71df-4744-ba1a-a0c78a57e896" />
 
 
