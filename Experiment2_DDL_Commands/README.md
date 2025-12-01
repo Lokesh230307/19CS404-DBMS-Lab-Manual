@@ -1,5 +1,8 @@
 # Experiment 2: DDL Commands
-
+```
+LOKESH S
+212224230143
+```
 ## AIM
 To study and implement DDL commands and different types of constraints.
 
@@ -105,123 +108,169 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1151" height="527" alt="image" src="https://github.com/user-attachments/assets/e081a08a-020f-442c-b0ad-e904335c2a5e" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+Create TABLE Customers(
+CustomerID INTEGER,
+Name TEXT,
+Email TEXT,
+JoinDate DATETIME);
 ```
 
 **Output:**
+<img width="1267" height="449" alt="image" src="https://github.com/user-attachments/assets/ac906078-ef46-4604-90e0-5dd5626a783e" />
 
-![Output1](output.png)
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1080" height="519" alt="image" src="https://github.com/user-attachments/assets/a3844996-ed63-4f84-a9aa-97d70787a23a" />
 
 ```sql
--- Paste your SQL code below for Question 2
+CREATE TABLE Employees(
+EmployeeID INTEGER,
+FirstName TEXT,
+LastName TEXT,
+HireDate DATE);
 ```
 
 **Output:**
+<img width="1268" height="363" alt="image" src="https://github.com/user-attachments/assets/3d1d4651-a969-4e21-817e-0ddf4e499b08" />
 
-![Output2](output.png)
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1252" height="301" alt="image" src="https://github.com/user-attachments/assets/b0216554-b26d-414d-8ee3-fb90ae3ffa7d" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+INSERT INTO Products(ProductID,Name,Category,Price,Stock) VALUES (101,'Laptop','Electronics',1500,50);
 ```
 
 **Output:**
+<img width="1263" height="281" alt="image" src="https://github.com/user-attachments/assets/da12cc4b-9d61-4579-b375-bb56a1c405cd" />
+
 
 ![Output3](output.png)
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1090" height="469" alt="image" src="https://github.com/user-attachments/assets/9e10a63e-11e4-4770-b872-d4bd54b7cca1" />
 
-```sql
--- Paste your SQL code below for Question 4
+
+
+```sqlCREATE TABLE Events(
+EventID INTEGER,
+EventName TEXT,
+EventDate DATE);
 ```
 
 **Output:**
+<img width="1262" height="403" alt="image" src="https://github.com/user-attachments/assets/7e4dff29-db20-4c22-8143-9bf4bc91b742" />
 
-![Output4](output.png)
 
 **Question 5**
 ---
+<img width="1207" height="654" alt="image" src="https://github.com/user-attachments/assets/ee11bf12-a111-4291-868d-b4df78f0b5e5" />
+
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+ALTER TABLE Student_details
+ADD Mobilenumber number
 ```
 
 **Output:**
+<img width="1259" height="387" alt="image" src="https://github.com/user-attachments/assets/5558fe50-3128-4c7c-945a-127512b66981" />
 
-![Output5](output.png)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1263" height="254" alt="image" src="https://github.com/user-attachments/assets/29edc204-5497-4c20-9026-926fa28fbe82" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 6
+INSERT INTO Products(PRODUCTID ,Name, Category, Price, Stock) VALUES (104, 'Tablet', 'Electronics',100,50);
 ```
 
 **Output:**
+<img width="1268" height="301" alt="image" src="https://github.com/user-attachments/assets/2e7f950b-83d9-4e0a-ae2a-0b87e3ff4b1f" />
 
-![Output6](output.png)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1251" height="361" alt="image" src="https://github.com/user-attachments/assets/15dc917c-4b30-49ad-b3f9-a32dc4f2aeec" />
 
 ```sql
--- Paste your SQL code below for Question 7
+CREATE TABLE Products (
+    ProductID INTEGER PRIMARY KEY,
+    ProductName TEXT UNIQUE NOT NULL,
+    Price REAL CHECK (Price > 0),
+    StockQuantity INTEGER CHECK (StockQuantity >= 0)
+);
+
 ```
 
 **Output:**
+<img width="1256" height="311" alt="image" src="https://github.com/user-attachments/assets/8deffb76-efa2-488d-a876-61037ff20c62" />
 
-![Output7](output.png)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1095" height="458" alt="image" src="https://github.com/user-attachments/assets/3f1076e0-6c44-48cc-a4fc-a889c889f7f2" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 8
+CREATE TABLE Tasks (
+    TaskID INTEGER,
+    TaskName TEXT,
+    DueDate DATE
+);
+
 ```
 
 **Output:**
+<img width="1262" height="366" alt="image" src="https://github.com/user-attachments/assets/04913edf-4518-4cbd-b1eb-04bbf5ab5972" />
 
-![Output8](output.png)
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1028" height="561" alt="image" src="https://github.com/user-attachments/assets/13e821cd-3679-47b5-9f7a-64e90dd854c6" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 9
+INSERT INTO Student_details (RollNo, Name, Gender, Subject, MARKS)
+SELECT RollNo, Name, Gender, Subject, MARKS
+FROM Archived_students;
 ```
 
 **Output:**
+<img width="1257" height="266" alt="image" src="https://github.com/user-attachments/assets/c1f11f42-4c12-4d17-a512-5aa72d00ce7a" />
 
-![Output9](output.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1269" height="335" alt="image" src="https://github.com/user-attachments/assets/96c51e11-c074-4fd7-a6e0-7d3e9183a945" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 10
+ALTER TABLE Student_details
+ADD COLUMN email TEXT NOT NULL DEFAULT 'Invalid';
+
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1253" height="221" alt="image" src="https://github.com/user-attachments/assets/add9437d-43ae-4bfe-971c-d257dd833023" />
 
 
 ## RESULT
